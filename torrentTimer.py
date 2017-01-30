@@ -19,9 +19,9 @@ class torrentTimer(object):
 		Returns:
 		    TYPE: Description
 		"""
-		print "Kill your MS word process in {} seconds.".format(wait_time)
+		print "Killing your BT_CLIENT_PROCESS_NAME process in {} seconds.".format(wait_time)
 		time.sleep(wait_time)
-		os.system('taskkill /f /im winword.exe')
+		os.system('taskkill /f /im BT_CLIENT_PROCESS_NAME')
 		print "Your word process has been killed!"
 		
 
