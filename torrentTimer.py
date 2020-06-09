@@ -13,18 +13,19 @@ class torrentTimer(object):
 		"""		
 		print "Your torrentTimer has been initiated"
 
-	def killWord(self,wait_time = 0):
-		"""Find MS word process by name, and kill it instantly.
+	def killBT(self,wait_time = 0):
+		"""Find BT Client process by name, and kill it instantly.
 		
 		Returns:
 		    TYPE: Description
 		"""
+		BT_CLIENT_PROCESS_NAME = "PROCESS_NAME_BT_CLIENT"
 		print "Killing your BT_CLIENT_PROCESS_NAME process in {} seconds.".format(wait_time)
 		time.sleep(wait_time)
 		os.system('taskkill /f /im BT_CLIENT_PROCESS_NAME')
-		print "Your word process has been killed!"
+		print "Your BT_CLIENT_PROCESS_NAME process has been killed!"
 		
 
 if __name__ == '__main__':
 	timer = torrentTimer()
-	timer.killWord(10)
+	timer.killBT(10)
